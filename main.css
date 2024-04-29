@@ -5,39 +5,76 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-header {
-    background-color: #192a56;
-    padding: 16px 0; 
+header, footer {
+    background-color: #294D61;
+    padding-top: 16px;
     color: #fff;
 }
 
-header .container {
-    display: flex;
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 16px;
 }
 
 nav {
-    display: flex;
+    background-color: #6DA5C0;
+    padding: 16px 0;
+    display: none;
 }
 
-nav ul.menu {
+nav li {
     list-style: none;
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
     display: flex;
 }
 
-nav ul.menu li {
-    margin-right: 16px;
-}
-
-nav ul.menu li:last-child {
-    margin-right: 0;
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
 }
 
 section {
@@ -49,29 +86,31 @@ section h2 {
 }
 
 .lista-veiculos {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .lista-veiculos li {
     list-style: none;
-    width: calc(30% - 10px);
+    max-width: 30%;
     margin-bottom: 24px;
 }
 
 .lista-veiculos li img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .lista-veiculos li h3 {
     margin: 16px 0;
 }
 
+.item-central {
+    margin: 0 5%;
+}
+
 button {
     display: block;
     width: 100%;
-    padding: 8px 0;
+    padding:  8px 0;
     border: none;
     background-color: #119759;
     color: #fff;

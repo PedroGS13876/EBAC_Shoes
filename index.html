@@ -1,64 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC_Shoes</title>
+    <title>Ebac Shoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
-    <header>EBAC Shoes</header>
-    <div class="container">
-        <ul class="menu">
-            <li><a href="#">Sobre a Loja</a></li>
-            <li><a href="#">Produtos</a></li>
-        </ul>
-    </div>
+    <header>
+        <div class="container container-flex">
+            <h1>EBAC Shoes</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#sobre-a-loja">Sobre a loja</a>
+                    </li>
+                    <li>
+                        <a href="#destaque">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <section id="sobre-a-loja">
-        <div class="container-flex">
-            <img src="./imagens/e8ef05364cc3e6d136443dd48c0337d3.jpg" alt="Loja da loja EBAC Shoes">
+        <div class="container container-flex">
+            <img src="./imagens/e8ef05364cc3e6d136443dd48c0337d3.jpg" alt="Imagem da loja EBAC Motors">
             <div>
                 <h2>Sobre a EBAC Shoes</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque pariatur voluptatem autem perferendis tempora laboriosam, labore magni doloribus minima animi explicabo similique dolor quod incidunt aut reiciendis in ex!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ullam natus aspernatur totam, inventore quis. Incidunt, consequatur consectetur. Dolores magnam ea assumenda aut? Eius impedit cum dolores obcaecati nisi reprehenderit.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque pariatur voluptatem autem perferendis tempora laboriosam, labore magni doloribus minima animi explicabo similique dolor quod incidunt aut reiciendis in ex!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ullam natus aspernatur totam, inventore quis. Incidunt, consequatur consectetur. Dolores magnam ea assumenda aut? Eius impedit cum dolores obcaecati nisi reprehenderit.
                 </p>
             </div>
         </div>
     </section>
-    <section>
+
+    <section id="destaque">
         <div class="container">
-            <h2>Produtos</h2>
-            <ul class="lista-veiculos">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
                 <li>
                     <img src="./imagens/Tenis_Response_Runner_Azul_IG0740_01_standard.avif" alt="">
                     <h3>Tênis Adidas</h3>
-                    <p>Tênis Adidas Ultraboost 5.0 Masculino
-                        Tamanhos 38, 39, 40 e 41
-                    </p>
-                    <div class="price">
-                        <strong>R$ 350,00</strong>
-                    </div>
-                    <button type="button">Adicionar ao carrinho</button>
-                </li>
-                <li>
-                    <img src="./imagens/Tenis_Response_Runner_Preto_ID7336_01_standard.avif" alt="">
-                    <h3>Tênis Adidas</h3>
-                    <p>Tênis Adidas Ultraboost 5.0 Masculino
-                        Tamanhos 38, 39, 40 e 41
+                    <p>
+                        Tênis Adidas Ultraboost 5.0 Masculino
+                        tamanhos: 38, 39, 40 e 41
                     </p>
                     <div class="price">
                         <strong>R$ 500,00</strong>
                     </div>
                     <button type="button">Adicionar ao carrinho</button>
                 </li>
-                <li>
-                    <img src="./imagens/Tenis_Response_Runner_Preto_ID7336_01_standard.avif" alt="">
+                <li class="item-central">
+                    <img src="./imagens/Tenis_Response_Runner_Verde_IG0739_01_standard.avif" alt="">
                     <h3>Tênis Adidas</h3>
-                    <p>Tênis Adidas Ultraboost 5.0 Masculino
-                        Tamanhos 38, 39, 40 e 41
+                    <p>
+                        Tênis Adidas Ultraboost 5.0 Masculino
+                        tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 580,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./imagens/Tenis_Response_Runner_Verde_IG0739_01_standard.avif" alt="">
+                    <h3>Tênis Adidas</h3>
+                    <p>
+                        Tênis Adidas Ultraboost 5.0 Masculino
+                        tamanhos: 38, 39, 40 e 41
                     </p>
                     <div class="price">
                         <strong>R$ 500,00</strong>
@@ -68,16 +95,145 @@
                 <li>
                     <img src="./imagens/Tenis_Response_Runner_Verde_IG0739_01_standard.avif" alt="">
                     <h3>Tênis Adidas</h3>
-                    <p>Tênis Adidas Ultraboost 5.0 Masculino
-                        Tamanhos 38, 39, 40 e 41
+                    <p>
+                        Tênis Adidas Ultraboost 5.0 Masculino
+                        tamanhos: 38, 39, 40 e 41
                     </p>
                     <div class="price">
-                        <strong>R$ 600,00</strong>
+                        <strong>R$ 580,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/Tenis_Response_Runner_Azul_IG0740_01_standard.avif" alt="">
+                    <h3>Tênis Adidas</h3>
+                    <p>
+                        Tênis Adidas Ultraboost 5.0 Masculino
+                        tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 500,00</strong>
                     </div>
                     <button type="button">Adicionar ao carrinho</button>
                 </li>
             </ul>
         </div>
     </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Tênis de interesse:</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="tamanho-tenis">Tamanho do tênis:</label>
+                    <input type="text" id="tamanho-tenis" name="tamanhoDoTenis">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensagem-carrinho"></div> <!-- Aqui adicionamos o elemento para exibir a mensagem -->
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>
+                2024 &copy; EBAC Shoes - Todos os direitos reservados 
+            </p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./ícones/facebook-logo-3-1.png" alt="Facebook">
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./ícones/logo-instagram-png-fundo-transparente.webp" alt="Instagram">
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./ícones/6e2cf920c73d260231a7cb8a16933486.png" alt="Whatsapp">
+                    </a>                    
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+    <script src="./JS/jquery.validate.min.js"></script>
+    <script src="./JS/messages_pt_BR.min.js"></script>
+    <script src="./JS/main.js"></script>
+    <script>
+        // Função para rolar a página suavemente para uma determinada seção
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Seleciona o menu hamburguer
+        const menuHamburguer = document.querySelector('.menu-hamburguer');
+
+        // Adiciona um ouvinte de evento para o clique no menu hamburguer
+        menuHamburguer.addEventListener('click', function() {
+            // Aqui você pode adicionar a lógica para exibir o menu ou executar outras ações
+            // Por enquanto, vamos apenas rolar a página suavemente para a seção correspondente quando uma opção do menu for clicada
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('show'); // Adiciona ou remove a classe 'show' para exibir ou ocultar o menu
+
+            // Se o menu estiver sendo exibido, adicionamos um ouvinte de evento para os itens do menu
+            if (nav.classList.contains('show')) {
+                const menuItems = nav.querySelectorAll('a');
+                menuItems.forEach(function(item) {
+                    item.addEventListener('click', function(event) {
+                        event.preventDefault(); // Previne o comportamento padrão do link
+                        const targetSectionId = item.getAttribute('href').substring(1); // Obtém o ID da seção alvo
+                        scrollToSection(targetSectionId); // Rola a página suavemente para a seção alvo
+                        nav.classList.remove('show'); // Oculta o menu após o clique
+                    });
+                });
+            }
+        });
+
+        // Seleciona o formulário
+        const form = document.querySelector('form');
+
+        // Adiciona um ouvinte de evento para o envio do formulário
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão de envio do formulário
+
+            // Verifica se todos os campos foram preenchidos
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const veiculoInteresse = document.getElementById('veiculo-interesse').value;
+            const tamanhoTenis = document.getElementById('tamanho-tenis').value;
+
+            // Se todos os campos estiverem preenchidos, exibe a mensagem
+            if (nome && email && veiculoInteresse && tamanhoTenis) {
+                // Aqui você pode adicionar a lógica para enviar o formulário e, em seguida, exibir a mensagem
+                // Por enquanto, apenas exibiremos a mensagem após 2 segundos para fins de demonstração
+                setTimeout(function() {
+                    const mensagemCarrinho = document.getElementById('mensagem-carrinho');
+                    mensagemCarrinho.textContent = 'Adicionado ao carrinho';
+                }, 2000);
+            }
+        });
+    </script>
 </body>
 </html>
